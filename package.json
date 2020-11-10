@@ -1,0 +1,36 @@
+{
+  "name": "eleventy-njk-unpkg-inliner",
+  "version": "0.0.4",
+  "description": "Inline npm modules from unpkg in Eleventy Nunjucks templates.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "npm run build && jest"
+  },
+  "keywords": [
+    "eleventy",
+    "module",
+    "unpkg",
+    "npm",
+    "js",
+    "javascript",
+    "inliner"
+  ],
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "author": "Jared Gorski <jaredgorski6@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredgorski/eleventy-njk-unpkg-inliner"
+  },
+  "homepage": "https://github.com/jaredgorski/eleventy-njk-unpkg-inliner#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser-js": "^5.2.2",
+    "jest": "^26.6.3"
+  }
+}

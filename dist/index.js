@@ -1,0 +1,1 @@
+function unpkgInliner(n){const r="https://unpkg.com/"+n;return new Promise((n,t)=>{require("https").get(r,r=>{let e="";r.on("data",n=>{e+=n}),r.on("end",()=>{e=e.toString("utf8").trim(),/^Cannot find package/.test(e)&&t(new Error(e)),n(e)})}).on("error",n=>{throw new Error(n)})})}module.exports=unpkgInliner;
