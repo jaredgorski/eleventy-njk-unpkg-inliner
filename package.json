@@ -1,6 +1,6 @@
 {
   "name": "eleventy-njk-unpkg-inliner",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Inline npm modules from unpkg in Eleventy Nunjucks templates.",
   "main": "dist/index.js",
   "scripts": {
