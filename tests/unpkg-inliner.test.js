@@ -12,7 +12,7 @@ module.exports = function (n) {
 };
 `.trim();
 
-describe('unpkg inliner', () => {
+describe('eleventy-njk-unpkg-inliner', () => {
   it('should download and return data from a valid unpkg path', async () => {
     const expectedModuleData = IS_POSITIVE_MODULE_DATA;
     const data = await unpkgInliner('is-positive@1.0.0/index.js');
@@ -21,12 +21,10 @@ describe('unpkg inliner', () => {
   });
 
   it('should throw error when passed an invalid unpkg path', async () => {
-    const expectedError = 'Cannot find package is-invalid@latest';
-
     await expect(async () => {
-      await unpkgInliner('is-invalid');
+      await unpkgInliner('zzzz-is-very-invalid-zzzz');
     })
       .rejects
-      .toThrow(expectedError);
+      .toThrow();
   });
 });
