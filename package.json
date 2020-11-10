@@ -1,6 +1,6 @@
 {
   "name": "eleventy-njk-unpkg-inliner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Inline npm modules from unpkg in Eleventy Nunjucks templates.",
   "main": "dist/index.js",
   "scripts": {
@@ -18,8 +18,7 @@
     "inliner"
   ],
   "files": [
-    "dist/",
-    "README.md"
+    "dist/"
   ],
   "author": "Jared Gorski <jaredgorski6@gmail.com>",
   "license": "MIT",
